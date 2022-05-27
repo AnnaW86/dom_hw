@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>England's Test Cricketers</title>
+    <script src="js/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Name:</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+            <label for="team" class="primary">Team:</label>
+            <select id="team">
+              <option value="" disabled selected></option>
+              <option value="Men's">Men's</option>
+              <option value="Women's">Women's</option>
+            </select>
+        </div>
+
+        <div class="form-item">
+          <div>
+              <p>Role:</p>
+              <div>
+
+                  <div>
+                    <label for="bowler">Bowler</label>
+                    <input type="radio" id="bowler" name="role" value="Bowler">
+                  </div>
+                  <div>
+                    <label for="batter">Batter</label>
+                    <input type="radio" id="batter" name="role" value="Batter">
+                  </div>
+                  <div>
+                    <label for="allrounder">All rounder</label>
+                    <input type="radio" id="allrounder" name="role" value="All Rounder">
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="form-item">
+          <label for="appearances" class="primary">Number of appearances this year:</label>
+          <input type="number" id="appearances" required/>
+        </div>
+
+
+        <div class="form-item">
+          <label for="runs" class="primary">Runs scored:</label>
+          <input type="number" id="runs" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="wickets" class="primary">Wickets taken:</label>
+          <input type="number" id="wickets" required/>
+        </div>
+
+        <div class="form-item">
+            <label for="wicket-keeper" class="primary">Select if wicket keeper:</label>
+            <input type="checkbox" name="wicket-keeper" id="wicket_keeper" value="true">
+        </div>
+
+        
+      </div>
+      <input type="submit" value="Save"/>
+    </form>
+
+    <button id="delete-button">Delete All</button>
+
+    <div class="list-container">
+      <h1>England's Test Cricketers - 2022</h1>
+      <ul id="cricketer-list"></ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+#form-wrapper {
+    width: 250px;
+}
+
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    width: 300px;
+}
+
+.form-item > div {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+/* .form-item > div > div {
+    width: 100%;
+} */
+
+.form-item > input {
+    height: 15.5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-item > div > div > div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form-item > div > div > div > label {
+    width: 100%;
+    text-align: right;
+    vertical-align:middle;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+.list-item {
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+button, input[type='submit'] {
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+    border: 1px gray solid;
+    border-radius: 50%;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    text-align: center;
+
+}
+
+input[type='submit'] {
+    background-color: #c9f8de;
+}
+
+button {
+    background-color: #ffe5e8;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#cricketer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .list-item {
+    background-color: #add8e617;
+    border: 1px #add8e6;
+    border-radius: 5px;
+    min-width: fit-content;
+    width: 250px;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .delete-button-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  li * {
+    margin: 5px;
+  }
