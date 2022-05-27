@@ -1,4 +1,5 @@
 const cricketer = require('./helpers/cricketers');
+const button = require('./helpers/buttons')
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Javascript loaded');
@@ -16,14 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cricketerListItem.appendChild(cricketer.getRuns(form));
         cricketerListItem.appendChild(cricketer.getWickets(form));
 
-        const deleteButtonContainer = document.createElement("div");
-        deleteButtonContainer.classList.add('delete-button-container');
-        cricketerListItem.appendChild(deleteButtonContainer)
-
-        const deleteListItemButton = document.createElement("button");
-        deleteListItemButton.textContent = "Remove";
-        deleteListItemButton.setAttribute("id", "delete-list-item")
-        deleteButtonContainer.appendChild(deleteListItemButton);
+        deleteListItemButton = button.createRemoveButton(cricketerListItem);
 
         const handleRemoveButton = () => {
             cricketerListItem.parentNode.removeChild(cricketerListItem);
